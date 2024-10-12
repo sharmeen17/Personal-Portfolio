@@ -15,6 +15,7 @@ body {
     font-family: "Poppins";
     line-height: 1.6;
     overflow-x: hidden;
+    background-color: #F5F5F5;
 }
 
 a {
@@ -73,6 +74,45 @@ input::placeholder {
     background-color: #484848;
 }
 
+.performedAt {
+
+    width: fit-content;
+    display: flex;
+    padding: 16px 97px 8px 97px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0px 0px 16px 16px;
+    border: 2px solid #F3BD00;
+    border-top: none;
+    background: #FFF0BB;
+    position: absolute;
+}
+
+.viewMore {
+    color: #0948B4;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.performed {
+    color: #1D1D1D;
+    font-family: "Lato";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.performedContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .role {
     display: flex;
     gap: 20px;
@@ -115,7 +155,7 @@ input::placeholder {
 }
 
 #name {
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
@@ -186,7 +226,7 @@ input::placeholder {
     justify-content: center;
     color: #1D1D1D;
     border-bottom: 2px solid #1D1D1D;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -199,7 +239,7 @@ input::placeholder {
     justify-content: center;
     color: #1D1D1D;
 
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -217,25 +257,31 @@ input::placeholder {
 
 .expertiseTitle {
     color: #1D1D1D;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding: 40px 0px;
     display: flex;
-    justify-content: flex-start;
+    padding: 40px 120px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
 }
 
 .expertiseDescription {
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    border-radius: 16px;
+    background: #F1F1F1;
+    box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px;
 }
 
 .backEndDevelopment {
     color: #1D1D1D;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -254,7 +300,7 @@ input::placeholder {
     color: #555;
     width: 582px;
     word-wrap: break-word;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -297,7 +343,7 @@ input::placeholder {
 .softskillsTitle {
     color: #1D1D1D;
     text-align: center;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -329,14 +375,25 @@ input::placeholder {
     width: 258px;
     display: flex;
     flex-direction: column;
+    gap: 16px;
     align-items: center;
     justify-content: center;
+}
+
+.container>p {
+    color: #1D1D1D;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .projectsTitle {
     color: #1D1D1D;
     text-align: center;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -349,12 +406,15 @@ input::placeholder {
 }
 
 .projectContainer {
-    /* border: 1px solid #1D1D1D; */
+    padding: 24px;
     margin-top: 24px;
     margin-left: 120px;
     display: flex;
     gap: 21px;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
+
 
 .projectImage {
     width: 354px;
@@ -371,13 +431,13 @@ input::placeholder {
     width: 354px;
     border-radius: 16px;
     background: #F1F1F1;
-    box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.10);
 }
 
 .projectName {
     margin-top: 16px;
     color: #1D1D1D;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -388,7 +448,6 @@ input::placeholder {
     border-radius: 8px;
     margin-top: 24px;
     border: none;
-    color: white;
     font-family: "Poppins";
     background: #0948B4;
     display: flex;
@@ -398,6 +457,11 @@ input::placeholder {
     gap: 10px;
     align-self: stretch;
     cursor: pointer;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .arrows {
@@ -432,7 +496,7 @@ input::placeholder {
 .experienceTitle {
     color: #1D1D1D;
     text-align: center;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -480,7 +544,7 @@ input::placeholder {
 
 .companyName {
     color: #1D1D1D;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -489,7 +553,7 @@ input::placeholder {
 
 .month {
     color: #1D1D1D;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -498,7 +562,7 @@ input::placeholder {
 
 .jobDescription {
     color: #555;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -522,7 +586,7 @@ input::placeholder {
 .qualificationTitle {
     color: #1D1D1D;
     text-align: center;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -595,7 +659,7 @@ input::placeholder {
 
 .ssc {
     color: #1D1D1D;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -605,7 +669,7 @@ input::placeholder {
 .school {
     margin-top: 0;
     color: #555;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -636,15 +700,18 @@ input::placeholder {
     height: 200px;
     border-radius: 600px;
     border: 5px solid #1D1D1D;
+    margin-bottom: -64px;
+
+}
+
+.profilePic {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .footerName {
     color: #F5F5F5;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -657,7 +724,7 @@ footer {
     background-color: #1D1D1D;
 }
 
-.footerContent{
+.footerContent {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -669,6 +736,16 @@ footer {
     gap: 14px;
 }
 
+.contactIcons>p {
+    color: #F5F5F5;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
 .contactContainer {
     display: flex;
     flex-direction: column;
@@ -676,13 +753,13 @@ footer {
     align-items: center;
 }
 
-.contactBox{
+.contactBox {
     display: flex;
-padding: 80px 0px 40px 0px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 24px;
+    padding: 80px 0px 40px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 .contactMe {
@@ -697,5 +774,15 @@ gap: 24px;
     gap: 10px;
     color: white;
     cursor: pointer;
-    margin-top: 24px;
+
+}
+
+.rights {
+    display: flex;
+    width: auto;
+    padding: 24px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid #DEDEDE;
 }
