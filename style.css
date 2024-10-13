@@ -39,7 +39,7 @@ input::placeholder {
     font-size: 24px;
 }
 
-.navDetails {
+.nav-details {
     display: flex;
     font-size: 24px;
     font-style: normal;
@@ -50,7 +50,20 @@ input::placeholder {
     cursor: pointer;
 }
 
-.searchBar {
+.nav-details > ul {
+    list-style: none;
+    display: flex;
+    display: flex;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 40px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-bar {
     display: flex;
 
     width: 240px;
@@ -74,7 +87,7 @@ input::placeholder {
     background-color: #484848;
 }
 
-.performedAt {
+.performed-at {
 
     width: fit-content;
     display: flex;
@@ -89,7 +102,7 @@ input::placeholder {
     position: absolute;
 }
 
-.viewMore {
+.view-more {
     color: #0948B4;
     font-family: Lato;
     font-size: 16px;
@@ -108,7 +121,7 @@ input::placeholder {
     line-height: normal;
 }
 
-.performedContainer {
+.performed-container {
     display: flex;
     justify-content: center;
 }
@@ -162,7 +175,7 @@ input::placeholder {
     line-height: normal;
 }
 
-#shortDescription {
+#short-description {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -176,7 +189,7 @@ input::placeholder {
     margin-top: 24px;
 }
 
-.seeMyWork {
+.see-my-work {
     font-family: "Poppins";
     border-radius: 8px;
     border: 2px solid #0948B4;
@@ -186,7 +199,7 @@ input::placeholder {
     cursor: pointer;
 }
 
-.downloadResume {
+.download-resume {
     font-family: "Poppins";
     border-radius: 8px;
     border: none;
@@ -200,11 +213,11 @@ input::placeholder {
     cursor: pointer;
 }
 
-.suitableSection {
+.suitable-section {
     font-family: "Poppins";
     /* border: 1px solid grey; */
     /* border-radius: 20px; */
-    width: 1200px;
+    width: 1110px;
     height: auto;
     margin: auto;
     margin-top: -100px;
@@ -219,7 +232,7 @@ input::placeholder {
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
 }
 
-.suitableFor {
+.suitable-for {
     width: 558px;
     margin: auto;
     display: flex;
@@ -246,16 +259,15 @@ input::placeholder {
     line-height: normal;
 }
 
-.expertiseSection {
+.expertise-section {
     margin-top: 44px;
     display: flex;
     padding: 0px 120px;
     flex-direction: column;
-    align-items: center;
     gap: 16px;
 }
 
-.expertiseTitle {
+.expertise-title {
     color: #1D1D1D;
     font-family: "Poppins";
     font-size: 48px;
@@ -269,8 +281,9 @@ input::placeholder {
     margin-top: 40px;
 }
 
-.expertiseDescription {
+.expertise-description {
     display: flex;
+    
     align-items: flex-start;
     gap: 20px;
     border-radius: 16px;
@@ -279,7 +292,7 @@ input::placeholder {
     padding: 20px;
 }
 
-.backEndDevelopment {
+.back-end-development {
     color: #1D1D1D;
     font-family: "Poppins";
     font-size: 40px;
@@ -288,7 +301,7 @@ input::placeholder {
     line-height: normal;
 }
 
-.backendSection {
+.backend-section {
     text-align: left;
     /* display: flex;
     flex-direction: column;
@@ -296,7 +309,7 @@ input::placeholder {
     gap: 8px; */
 }
 
-.shortDescription {
+.short-description {
     color: #555;
     width: 582px;
     word-wrap: break-word;
@@ -307,7 +320,7 @@ input::placeholder {
     line-height: normal;
 }
 
-.techTitle {
+.tech-title {
     margin-top: 40px;
     /* border: 1px solid #1D1D1D; */
     padding: 40px 120px;
@@ -320,16 +333,17 @@ input::placeholder {
     line-height: normal;
 }
 
-.techDescription {
+.tech-description {
     margin-top: 16px;
     display: flex;
     gap: 40px;
-    margin-left: 120px;
+    padding: 0px 120px;
     overflow-x: scroll;
     scrollbar-width: none;
+    width: auto;
 }
 
-.techNames {
+.tech-names {
     color: var(--Schemes-Scrim, #000);
     display: flex;
     justify-content: center;
@@ -340,7 +354,7 @@ input::placeholder {
     line-height: normal;
 }
 
-.softskillsTitle {
+.softskills-title {
     color: #1D1D1D;
     text-align: center;
     font-family: "Poppins";
@@ -356,7 +370,7 @@ input::placeholder {
     margin-top: 40px;
 }
 
-.softskillsDescription {
+.softskills-description {
     width: 1010px;
     height: auto;
     margin: auto;
@@ -390,7 +404,7 @@ input::placeholder {
     line-height: normal;
 }
 
-.projectsTitle {
+.projects-title {
     color: #1D1D1D;
     text-align: center;
     font-family: "Poppins";
@@ -405,24 +419,25 @@ input::placeholder {
     margin-top: 40px;
 }
 
-.projectContainer {
+.project-container {
     padding: 24px;
     margin-top: 24px;
-    margin-left: 120px;
+    padding: 15px 120px;
     display: flex;
     gap: 21px;
     overflow-x: scroll;
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 
-.projectImage {
+.project-image {
     width: 354px;
     height: 204px;
     border-radius: 8px;
 }
 
-.projectDescription {
+.project-description {
     /* border: 1px solid #1D1D1D; */
     display: flex;
     padding: 16px;
@@ -434,7 +449,7 @@ input::placeholder {
     box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.10);
 }
 
-.projectName {
+.project-name {
     margin-top: 16px;
     color: #1D1D1D;
     font-family: "Poppins";
@@ -444,7 +459,7 @@ input::placeholder {
     line-height: normal;
 }
 
-.viewProject {
+.view-project {
     border-radius: 8px;
     margin-top: 24px;
     border: none;
@@ -486,14 +501,14 @@ input::placeholder {
 
 }
 
-.vectorIcon {
+.vector-icon {
     width: 7.134px;
     height: 12.97px;
     flex-shrink: 0;
 
 }
 
-.experienceTitle {
+.experience-title {
     color: #1D1D1D;
     text-align: center;
     font-family: "Poppins";
@@ -508,7 +523,7 @@ input::placeholder {
     margin-top: 40px;
 }
 
-.knowMore {
+.know-more {
     display: flex;
     padding: 10px 24px;
     justify-content: center;
@@ -523,7 +538,7 @@ input::placeholder {
 }
 
 
-.experienceDescription {
+.experience-description {
     display: flex;
     gap: 24px;
     padding: 24px;
@@ -542,7 +557,7 @@ input::placeholder {
     width: 210px;
 }
 
-.companyName {
+.company-name {
     color: #1D1D1D;
     font-family: "Poppins";
     font-size: 24px;
@@ -560,7 +575,7 @@ input::placeholder {
     line-height: normal;
 }
 
-.jobDescription {
+.job-description {
     color: #555;
     font-family: "Poppins";
     font-size: 16px;
@@ -570,11 +585,11 @@ input::placeholder {
     word-wrap: break-word;
 }
 
-.companyDescription {
+.company-description {
     width: 275px;
 }
 
-.experienceContainer {
+.experience-container {
 
     display: flex;
     gap: 19px;
@@ -583,7 +598,7 @@ input::placeholder {
 
 }
 
-.qualificationTitle {
+.qualification-title {
     color: #1D1D1D;
     text-align: center;
     font-family: "Poppins";
@@ -599,13 +614,13 @@ input::placeholder {
 
 }
 
-.qualificationContainer {
+.qualification-container {
     display: flex;
     gap: 77px;
     margin-bottom: 40px;
 }
 
-.qualificationDescription {
+.qualification-description {
     display: flex;
     gap: 40px;
     justify-content: flex-start;
@@ -651,7 +666,7 @@ input::placeholder {
 }
 
 
-.qualificationContent {
+.qualification-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -676,7 +691,7 @@ input::placeholder {
     line-height: normal;
 }
 
-.boyImage {
+.boy-image {
     width: 590px;
     flex: 1 0 0;
     border-radius: 16px;
@@ -684,7 +699,7 @@ input::placeholder {
     box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.10);
 }
 
-.photoDescription {
+.photo-description {
     width: 590px;
     color: #555;
     font-family: Poppins;
@@ -695,7 +710,7 @@ input::placeholder {
     word-wrap: break-word;
 }
 
-.footerPic {
+.footer-pic {
     width: 201.227px;
     height: 200px;
     border-radius: 600px;
@@ -704,12 +719,12 @@ input::placeholder {
 
 }
 
-.profilePic {
+.profile-pic {
     display: flex;
     justify-content: center;
 }
 
-.footerName {
+.footer-name {
     color: #F5F5F5;
     font-family: "Poppins";
     font-size: 32px;
@@ -724,19 +739,19 @@ footer {
     background-color: #1D1D1D;
 }
 
-.footerContent {
+.footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: -64px;
 }
 
-.contactIcons {
+.contact-icons {
     display: flex;
     gap: 14px;
 }
 
-.contactIcons>p {
+.contact-icons>p {
     color: #F5F5F5;
     font-family: "Poppins";
     font-size: 16px;
@@ -746,14 +761,14 @@ footer {
     /* 162.5% */
 }
 
-.contactContainer {
+.contact-container {
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: center;
 }
 
-.contactBox {
+.contact-box {
     display: flex;
     padding: 80px 0px 40px 0px;
     flex-direction: column;
@@ -762,7 +777,7 @@ footer {
     gap: 24px;
 }
 
-.contactMe {
+.contact-me {
     font-family: "Poppins";
     border-radius: 8px;
     border: none;
